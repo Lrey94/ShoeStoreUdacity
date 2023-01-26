@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.example.shoestoreapp-mergeDebugResources-61:/layout/fragment_onboarding.xml",
+        "source": "com.example.shoestoreapp-main-64:/layout/fragment_onboarding.xml"
+    },
+    {
+        "merged": "com.example.shoestoreapp-mergeDebugResources-61:/layout/activity_main.xml",
+        "source": "com.example.shoestoreapp-main-64:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.shoestoreapp-mergeDebugResources-61:/layout/fragment_login.xml",
+        "source": "com.example.shoestoreapp-main-64:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.example.shoestoreapp-mergeDebugResources-61:/layout/fragment_shoe_details.xml",
+        "source": "com.example.shoestoreapp-main-64:/layout/fragment_shoe_details.xml"
+    },
+    {
+        "merged": "com.example.shoestoreapp-mergeDebugResources-61:/layout/fragment_shoe_listings.xml",
+        "source": "com.example.shoestoreapp-main-64:/layout/fragment_shoe_listings.xml"
+    },
+    {
+        "merged": "com.example.shoestoreapp-mergeDebugResources-61:/layout/fragment_onboarding_instructions.xml",
+        "source": "com.example.shoestoreapp-main-64:/layout/fragment_onboarding_instructions.xml"
+    }
+]
