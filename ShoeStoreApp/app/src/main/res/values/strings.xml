@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">ShoeStoreApp</string>
+    <string name="email">Enter your email address</string>
+    <string name="password">Enter your password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="welcome">Welcome To The Shoeniverse!</string>
+    <string name="instructions_button">Click the button below to view the instructions</string>
+    <string name="to_instructions">Instructions</string>
+    <string name="instructions_body">Clicking the below button will take you to the shoe listing page. Clicking on an item on this
+    page will take you to that individual item. You can return to the list at any time by clicking Return to shoe list</string>
+    <string name="to_shoe_listings">Shoe listings</string>
+
+    <string name="shoe_name">Shoe Name</string>
+    <string name="shoe_colour">Shoe Colour</string>
+    <string name="shoe_maker">Shoe Maker</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="shoe_title">Use this page to populate the details of the shoe</string>
+    <string name="saveButton">Save Shoe To List</string>
+    <string name="cancelButton">Cancel</string>
+
+</resources>

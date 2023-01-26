@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.shoestoreapp.Login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.shoestoreapp.Onboarding.OnboardingWelcomeFragment"
+        android:label="OnboardingFragment"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onboardingFragment_to_onboardingInstructionsFragment"
+            app:destination="@id/onboardingInstructionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeDetailsFragment"
+        android:name="com.example.shoestoreapp.Shoe_Details.ShoeDetailsFragment"
+        android:label="ShoeDetailsFragment"
+        tools:layout="@layout/fragment_shoe_listings">
+        <action
+            android:id="@+id/action_shoeDetailsFragment_to_shoeListingsFragment"
+            app:destination="@id/shoeListingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeListingsFragment"
+        android:name="com.example.shoestoreapp.Shoe_Listings.ShoeListingsFragment"
+        android:label="ShoeListingsFragment"
+        tools:layout="@layout/fragment_shoe_details">
+        <action
+            android:id="@+id/action_shoeListingsFragment_to_shoeDetailsFragment"
+            app:destination="@id/shoeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingInstructionsFragment"
+        android:name="com.example.shoestoreapp.Onboarding.OnboardingInstructionsFragment"
+        android:label="fragment_onboarding_instructions"
+        tools:layout="@layout/fragment_onboarding_instructions" >
+        <action
+            android:id="@+id/action_onboardingInstructionsFragment_to_shoeListingsFragment"
+            app:destination="@id/shoeListingsFragment" />
+    </fragment>
+</navigation>
