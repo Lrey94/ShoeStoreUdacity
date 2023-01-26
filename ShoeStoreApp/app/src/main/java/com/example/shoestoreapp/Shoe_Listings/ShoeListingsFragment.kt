@@ -9,10 +9,10 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import com.example.shoe.model.Shoe
 import com.example.shoestoreapp.R
 import com.example.shoestoreapp.viewmodel.ShoeListingsViewModel
 import com.example.shoestoreapp.databinding.FragmentShoeListingsBinding
-import com.example.shoestoreapp.model.Shoe
 import kotlinx.android.synthetic.main.shoe_list_item.view.*
 
 class ShoeListingsFragment : Fragment() {

@@ -5,10 +5,9 @@
     android:id="@+id/navigation"
     app:startDestination="@id/loginFragment">
 
-
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.shoestoreapp.Login.LoginFragment"
+        android:name="com.example.shoe.Login.LoginFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login">
         <action
@@ -17,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/onboardingFragment"
-        android:name="com.example.shoestoreapp.Onboarding.OnboardingWelcomeFragment"
+        android:name="com.example.shoe.Onboarding.OnboardingWelcomeFragment"
         android:label="OnboardingFragment"
         tools:layout="@layout/fragment_onboarding">
         <action
@@ -44,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/onboardingInstructionsFragment"
-        android:name="com.example.shoestoreapp.Onboarding.OnboardingInstructionsFragment"
+        android:name="com.example.shoe.Onboarding.OnboardingInstructionsFragment"
         android:label="fragment_onboarding_instructions"
         tools:layout="@layout/fragment_onboarding_instructions" >
         <action

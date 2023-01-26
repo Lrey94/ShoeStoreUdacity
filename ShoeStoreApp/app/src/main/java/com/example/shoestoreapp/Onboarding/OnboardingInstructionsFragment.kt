@@ -1,4 +1,4 @@
-package com.example.shoestoreapp.Onboarding
+package com.example.shoe.Onboarding
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

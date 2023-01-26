@@ -11,10 +11,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.shoe.model.Shoe
 import com.example.shoestoreapp.MainActivity
 import com.example.shoestoreapp.R
 import com.example.shoestoreapp.databinding.FragmentShoeDetailsBinding
-import com.example.shoestoreapp.model.Shoe
 import com.example.shoestoreapp.viewmodel.ShoeListingsViewModel
 
 class ShoeDetailsFragment : Fragment() {
