@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.example.shoestoreapp.R
-import com.example.shoestoreapp.databinding.FragmentOnboardingBinding
 import com.example.shoestoreapp.databinding.FragmentOnboardingInstructionsBinding
 
 class OnboardingInstructionsFragment : Fragment() {

@@ -19,5 +19,7 @@
     <string name="shoe_title">Use this page to populate the details of the shoe</string>
     <string name="saveButton">Save Shoe To List</string>
     <string name="cancelButton">Cancel</string>
+    <string name="logout">Logout</string>
+    <string name="shoeniverse">Shoeniverse</string>
 
 </resources>

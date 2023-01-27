@@ -31,7 +31,4 @@ class LoginFragment : Fragment() {
 
         return binding.root
     }
-
-    private fun onFinish(){
-    }
 }

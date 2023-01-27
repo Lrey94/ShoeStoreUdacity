@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_onboardingFragment"
-            app:destination="@id/onboardingFragment" />
+            app:destination="@id/onboardingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left" />
     </fragment>
     <fragment
         android:id="@+id/onboardingFragment"
@@ -21,16 +23,18 @@
         tools:layout="@layout/fragment_onboarding">
         <action
             android:id="@+id/action_onboardingFragment_to_onboardingInstructionsFragment"
-            app:destination="@id/onboardingInstructionsFragment" />
+            app:destination="@id/onboardingInstructionsFragment"
+            app:enterAnim="@anim/slide_in_left" />
     </fragment>
     <fragment
         android:id="@+id/shoeDetailsFragment"
-        android:name="com.example.shoestoreapp.Shoe_Details.ShoeDetailsFragment"
+        android:name="com.example.shoestoreapp.shoe_details.ShoeDetailsFragment"
         android:label="ShoeDetailsFragment"
         tools:layout="@layout/fragment_shoe_listings">
         <action
             android:id="@+id/action_shoeDetailsFragment_to_shoeListingsFragment"
-            app:destination="@id/shoeListingsFragment" />
+            app:destination="@id/shoeListingsFragment"
+            app:enterAnim="@anim/slide_in_right" />
     </fragment>
     <fragment
         android:id="@+id/shoeListingsFragment"
@@ -39,7 +43,12 @@
         tools:layout="@layout/fragment_shoe_details">
         <action
             android:id="@+id/action_shoeListingsFragment_to_shoeDetailsFragment"
-            app:destination="@id/shoeDetailsFragment" />
+            app:destination="@id/shoeDetailsFragment"
+            app:enterAnim="@anim/slide_in_left" />
+        <action
+            android:id="@+id/action_shoeListingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_left" />
     </fragment>
     <fragment
         android:id="@+id/onboardingInstructionsFragment"
@@ -48,6 +57,9 @@
         tools:layout="@layout/fragment_onboarding_instructions" >
         <action
             android:id="@+id/action_onboardingInstructionsFragment_to_shoeListingsFragment"
-            app:destination="@id/shoeListingsFragment" />
+            app:destination="@id/shoeListingsFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:popUpTo="@id/onboardingFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

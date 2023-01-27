@@ -1,7 +1,7 @@
 package com.example.shoe.model
 
 
-data class Shoe (private val shoeName: String, private val shoeColour: String, private val shoeMaker: String, private val shoeSize: String, ) {
+data class Shoe (val shoeName: String, val shoeColour: String, val shoeMaker: String, val shoeSize: String, ) {
 
 
 

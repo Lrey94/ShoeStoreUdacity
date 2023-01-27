@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.shoestoreapp.viewmodel.ShoeListingsViewModel" />
+            type="com.example.shoestoreapp.viewmodel.ShoeViewModel" />
     </data>
 
     <!-- constraint layout is used to that it can be extended to more complex UI in the future -->
@@ -26,7 +26,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- scroll view and linear layout are used to that it still works if we have longer fields to enter-->
+        <!-- scroll view and linear layout are used so that if we have to enter longer fields in the future,
+        then these layouts will support that. -->
         <ScrollView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -58,7 +59,7 @@
                     android:ems="10"
                     android:hint="@string/shoe_name"
                     android:inputType="text"
-                    />
+                    android:text="@={viewModel.shoeNameBlank}"/>
 
                 <TextView
                     android:id="@+id/shoe_colour_title"
@@ -73,7 +74,7 @@
                     android:ems="10"
                     android:hint="@string/shoe_colour"
                     android:inputType="text"
-                    />
+                    android:text="@={viewModel.shoeColourBlank}"/>
 
                 <TextView
                     android:id="@+id/shoe_maker_title"
@@ -87,8 +88,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="@string/shoe_maker"
-                    android:inputType="numberSigned|numberDecimal"
-                    />
+                    android:inputType="text"
+                    android:text="@={viewModel.shoeMakerBlank}"/>
 
                 <TextView
                     android:id="@+id/shoe_size_title"
@@ -102,8 +103,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="@string/shoe_size"
-                    android:inputType="textPersonName"
-                    />
+                    android:inputType="numberSigned|numberDecimal"
+                    android:text="@={viewModel.shoeSizeBlank}"/>
 
             </LinearLayout>
         </ScrollView>
